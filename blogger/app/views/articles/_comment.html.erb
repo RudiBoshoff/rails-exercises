@@ -1,0 +1,10 @@
+<div>
+
+  <p class="comment">
+    <span style="color: #9dbee2; text-align: center; display: block;"><%= comment.author_name %></span>
+    <%= comment.body %>
+    <br>
+    <span style="float: right;">Posted <%= distance_of_time_in_words(Time.now, comment.created_at) %> ago</span>
+  </p>
+  <br>
+</div>
